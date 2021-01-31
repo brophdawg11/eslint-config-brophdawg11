@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-brophdawg11",
+  "version": "1.0.0",
+  "description": "brophdawg11's personal eslint configs",
+  "main": "index.js",
+  "author": "matt@brophy.org",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "7.12.1",
+    "eslint": "7.19.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-vue": "7.5.0"
+  },
+  "devDependencies": {
+    "husky": "4.3.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  }
+}
